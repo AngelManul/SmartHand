@@ -7,7 +7,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return app.send_static_file('interfaz.html')
+    return app.send_static_file('index.html')
 
 @app.route('/api/python_script', methods=['POST'])
 def run_python_script():
@@ -22,3 +22,7 @@ def run_python_script():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+
